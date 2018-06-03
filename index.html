@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Monoton" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Galada|Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 	<title>Ultimate Tic Tac Toe</title>
 </head>
 <body>
-	<header>
-		<h3>Ultimate Tic Tac Toe</h3>
-	</header>
-	<main>
-		<!-- large game board -->
+	<div class="container">
+
+	<h1><i class="fab fa-js-square"></i> Ultimate Tic Tac Toe</h1>
+
 		<table id="largeBoard">
 			<tr>
 				<td class="largeTile">
@@ -192,14 +193,17 @@
 			</tr>
 		</table>
 
-		<p>Player <span id="player">X</span>, it's your turn!</p>
-		<!-- content to be displayed when game is finished -->
+		<!-- REMOVE when js logic is fixed -->
+		<!-- <p>Player <span id="player">X</span>, it's your turn!</p>
 		<p id="winner"> </p>
-		<!-- add reset button -->
-		<p><button id="start">Play</button></p>
+		<p><button id="start">Play</button></p> -->
 
+		<div class="gameInfo">
+			<p id="gameMessage">Player X, it's your turn.</p>
+			<button type="button" id="resetButton">Reset</button>
+		</div>
 
-	</main>
+	</div>
 </body>
 <script src="js/scripts.js"></script>
 
