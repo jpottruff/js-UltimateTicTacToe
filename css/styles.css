@@ -1,0 +1,82 @@
+header {
+	text-align: center;
+	width: 100%;
+}
+main {
+	text-align: center;
+	width: 100%;
+}
+table {
+	margin: auto;
+	padding: 5px;
+	background-color: white;
+	color: navy;
+	font-family: Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+table.smallBoard {
+	background-color: transparent;
+}
+td {
+	height: 2em;
+	width: 7em;
+	font-size: 1em;
+	font-family: sans-serif;
+	border: 1px solid #00f;
+	background-color: transparent;
+}
+td:nth-child(1) {
+	border-left-style: none;
+}
+
+td:nth-child(3) {
+	border-right-style: none;
+}
+
+tr:nth-child(1)>td {
+	border-top-style: none;
+}
+
+tr:nth-child(3)>td {
+	border-bottom-style: none;
+}
+
+address {
+	text-align: center;
+}
+
+span.largeToken {
+	font-size: 6em;
+}
+
+/* responsive settings */
+
+/* small devices */
+/*note: too many values error in validator??? */
+@media only screen and (max-device-width: 420px) and (orientation: portrait), (max-device-width: 720px) and (orientation: landscape) {
+
+	header {
+		display: none;				/*removes header from smaller screen*/
+	}
+
+
+	main{
+		display: flex;				/* turns the whole of the main into a flex box */
+		width: 100%;
+		margin: 0 auto;
+		flex-direction: column;		/* ensures no elements go off to the side */
+	}
+
+
+}
+
+/* medium devices */
+
+@media only screen and (max-device-width: 768 px) and (orientation: portrait), (max-device-width: 1024px) and (orientation: landscape) {
+
+	main{
+		display: flex;				/* turns the whole of the main into a flex box */
+		width: 100%;
+		margin: 0 auto;
+		flex-direction: column;		/* ensures no elements go off to the side */
+	}
+}
